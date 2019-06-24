@@ -1,0 +1,137 @@
+/*--
+Authors: Members of Group 7 CSC405 Project
+--*/
+
+body {
+    font-size: 100%;
+    font-family: 'Nunito', sans-serif;
+}
+
+.mx-15 {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+
+form {
+    max-width: 300px;
+    margin: 69px auto;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+}
+
+h1 {
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+  
+fieldset {
+    margin-bottom: 30px;
+    border: none;
+}
+
+.input {
+    margin-bottom: 1em;
+    padding: 13px 15px;
+    border: 1px solid #eee;
+    background: #eee;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.input span {
+    font-size: 15px;
+    color: #464646;
+    margin-right: 10px;
+}
+
+.input input {
+    color: #000;
+    font-size: 14px;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+}
+
+.submit {
+    margin: 2.3em auto 0;
+    background: rgb(254, 201, 85);
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+    display: block;
+    color: #fff;
+    padding: 14px 30px;
+    -webkit-border-radius: 0;
+    -o-border-radius: 0;
+    -ms-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    font-size: 15px;
+    letter-spacing: 2px;
+    width: 100%;
+}
+
+.submit:hover {
+    opacity: .8;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+}
+
+
+@media(max-width: 480px) {
+    .input input {
+        font-size: 13px;
+    }
+
+    .input {
+        padding: 12px 12px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+
+    form {
+      max-width: 480px;
+    }
+  
+}
+
+

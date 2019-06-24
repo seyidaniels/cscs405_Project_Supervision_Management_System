@@ -1,0 +1,14 @@
+{
+    "require": {
+        "illuminate/database": "^5.8"
+    },
+    "autoload": {
+        "classmap": [
+            "app/models",
+            "app/core"
+        ]
+    },
+    "scripts": {
+        "create-controller": "@php createcontroller.php"
+    }
+}
