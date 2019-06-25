@@ -9,14 +9,14 @@
     <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
 
     <!-- Libs CSS -->
-    <link rel="stylesheet" href="../assets/fonts/feather/feather.min.css">
+    <link rel="stylesheet" href="<?php echo root() .'fonts/feather/feather.min.css' ?>">
 
     <!-- Theme CSS -->
       
-    <link rel="stylesheet" href="../assets/css/theme.min.css">
+    <link rel="stylesheet" href="<?php echo root() .'css/theme.min.css" id="stylesheetLight' ?>">
     
 
-    <title>Dashkit</title>
+    <title>Profile</title>
   </head>
   <body>
 
@@ -796,7 +796,7 @@
 
           <!-- Brand -->
           <a class="navbar-brand" href="index-2.html">
-            <img src="../assets/images/logo.svg" class="navbar-brand-img 
+            <img src="<?php echo root() .'images/logo.svg"' ?>" class="navbar-brand-img 
             mx-auto" alt="...">
           </a>
 
@@ -809,7 +809,7 @@
               <!-- Toggle -->
               <a href="#!" id="sidebarIcon" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="avatar avatar-sm avatar-online">
-                  <img src="../assets/images/avatars/profiles/avatar-1.jpg" class="avatar-img rounded-circle" alt="...">
+                  <img src="<?php echo root() .'images/avatars/profiles/avatar-1.jpg"' ?>" class="avatar-img rounded-circle" alt="...">
                 </div>
               </a>
 
@@ -848,13 +848,13 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#sidebarPages">
-                  <i class="fe fe-file-text"></i> Account Summary
+                <a class="nav-link" href="profile-files.html">
+                  <i class="fe fe-user"></i> Setup Profile
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="profile-files.html">
-                  <i class="fe fe-user"></i> Setup Profile
+                <a class="nav-link" href="#sidebarPages">
+                  <i class="fe fe-mail"></i> Messages
                 </a>
               </li>
             </ul>
@@ -1372,7 +1372,7 @@
         
                 <!-- Toggle -->
                 <a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <img src="../assets/images/avatars/profiles/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                  <img src="<?php echo root() .'images/avatars/profiles/avatar-1.jpg'?>" alt="..." class="avatar-img rounded-circle">
                 </a>
 
                 <!-- Menu -->
@@ -1395,7 +1395,7 @@
       <div class="header">
 
         <!-- Image -->
-        <img src="../assets/images/covers/profile-cover-1.jpg" class="header-img-top" alt="...">
+        <img src="<?php echo root() .'images/profile-cover-1.jpg"' ?>" class="header-img-top" alt="...">
         
         <div class="container-fluid">
 
@@ -1406,7 +1406,7 @@
                 
                 <!-- Avatar -->
                 <div class="avatar avatar-xxl header-avatar-top">
-                  <img src="../assets/images/avatars/profiles/avatar-1.jpg" alt="..." class="avatar-img rounded-circle border border-4 border-body">
+                  <img src="<?php echo '../images/avatars/profiles/avatar-1.jpg' ?>" alt="..." class="avatar-img rounded-circle border-4 border-body">
                 </div>
 
               </div>
@@ -1418,7 +1418,7 @@
                 </h6>
 
                 <!-- Title -->
-                <h1 class="header-title">
+                <h1 class="header-title" style="color: #95a5b4">
                   Dianna Smiley
                 </h1>
 
@@ -1432,7 +1432,7 @@
 
               </div>
             </div> <!-- / .row -->
-            <div class="mt-5">
+            <div class="mt-5" style="color: #95a5b4">
               Setup Profile
             </div>
           </div> <!-- / .header-body -->
@@ -1444,7 +1444,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 col-xl-6">
-            <div class="mb-2">Enter Full Name</div>
+            <div class="mb-2" style="color: #95a5b4">Enter Full Name</div>
             <input type="text" class="form-control" placeholder="Enter Full Name">
           </div>
         </div> <!-- / .row -->
