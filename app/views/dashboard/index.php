@@ -436,12 +436,7 @@
     <script>
     $(document).on("click", ".message_supervisor", function () {
      var  appointment_id = $(this).data('appointment_id');
-     console.log(appointment_id);
-     return;
-     $(".modal-body #appointment_id").val( myBookId );
-     // As pointed out in comments, 
-     // it is unnecessary to have to manually call the modal.
-     // $('#addBookDialog').modal('show');
+     $("#appointment_id").val(appointment_id);
 });
 
     </script>
