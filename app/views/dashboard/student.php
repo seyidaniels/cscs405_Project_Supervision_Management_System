@@ -101,17 +101,17 @@
             <div class="card-header">
           
               <!-- Form -->
-              <form action="<?php echo root(). 'student/bookAppointment'; ?>" method = "post">
+              <form action="<?php echo root(). 'student/sendMessage'; ?>" method = "post">
             
 
                 <div class="form-group">
                   <label for="exampleInputMessge">Enter Message </label>
-                  <textarea class="form-control" id="exampleInput" name="about" cols="10" rows="5" required></textarea>
+                  <textarea class="form-control" id="exampleInput" name="text" cols="10" rows="5" required></textarea>
                 </div>
 
                 <input type="hidden" name="student_id" value="<?php echo Auth::user()->id ?>" >
 
-
+                <input type="hidden" name="appointment_id" id="appointment_id" >
                 
 
                 <button type="submit" class="btn btn-primary">Send Message</button>
@@ -194,7 +194,6 @@
                 </div> <!-- / .row -->
               </div><div class='card-body'>
               <?php 
-
               foreach(Auth::user()->appointments as $appointment){
                 
                 echo "              
@@ -225,7 +224,7 @@
                         <a href='#!' class='dropdown-item message_supervisor'  data-toggle='modal' data-appointment_id=".$appointment->id.    " data-target='#messageSupervisor' >
                           Message Supervisor
                         </a>
-                        <a href='#!' class='dropdown-item'>
+                        <a href=".root(). 'student/cancelAppointment/' .$appointment->id. " class='dropdown-item'>
                           Cancel Appointment
                         </a>
                       </div>
