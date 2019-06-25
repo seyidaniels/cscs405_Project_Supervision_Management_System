@@ -57,13 +57,18 @@
             <!-- Navigation -->
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="dashboard-alt.html">
+                <a class="nav-link" href="<?php echo root() .'dashboard/index'?>">
                   <i class="fe fe-home"></i> Dashboards
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="profile-files.html">
+                <a class="nav-link" href="<?php echo root() .'dashboard/profile'?>">
                   <i class="fe fe-user"></i> Profile
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="<?php echo root() .'dashboard/message'?>">
+                  <i class="fe fe-mail"></i> Messages
                 </a>
               </li>
               <li class="nav-item d-md-none">
@@ -95,7 +100,7 @@
                 <!-- Toggle -->
                 <a href="#!" id="sidebarIconCopy" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <div class="avatar avatar-sm avatar-online">
-                    <img src="<?php echo 'images/avatars/profiles/avatar-1.jpg' ?>" class="avatar-img rounded-circle" alt="...">
+                    <img src="<?php echo root() .'images/avatars/profiles/avatar-2.jpg' ?>" class="avatar-img rounded-circle" alt="...">
                   </div>
                 </a>
 
