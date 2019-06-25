@@ -139,7 +139,11 @@
               <div class="card-body">
 
 
-              <?php foreach(Auth::user()->schedules as $schedule) {
+              <?php 
+
+              if (count(Auth::user()->schedules)) {
+                  foreach(Auth::user()->schedules as $schedule) {
+
       echo "
             
             
@@ -148,34 +152,50 @@
 
                     <!-- Title -->
                     <h4 class='card-title mb-1'>
-                      <a href='project-overview.html'>". $schedule->day . ' | '.$schedule->max_no_students . ' students ' . "</a>
+                      <i class='fe fe-plus' id='icons'></i>
+                      <!-- <i class='fe fe-minus'></i> -->
+                      <a class='collapsed' data-toggle='collapse' data-target='#collapseOne' style='cursor: pointer;'>". $schedule->day . ' | '.$schedule->max_no_students . ' students ' . "
+                      </a>
                     </h4>
+                    <div id='collapseOne' class='collapse' data-parent='#accordionExample'>
+                      <div class='card-body'>
+                        <p>
+                          <ul class='appointment__table'>
+                            <li>
+                              Student's 1 name | Appointment time <br>
+                              <button class='btn btn-success'>Accept</button> <button class='btn btn-danger'>Cancel</button>
+                              <button class='btn btn-primary'>Message</button>
+                            </li>
+                            <li>
+                              Student's 2 name | Appointment time <br>
+                              <button class='btn btn-success'>Accept</button> <button class='btn btn-danger'>Cancel</button>
+                              <button class='btn btn-primary'>Message</button>
+                            </li>
+                            <li>
+                              Student's 3 name | Appointment time <br>
+                              <button class='btn btn-success'>Accept</button> <button class='btn btn-danger'>Cancel</button>
+                              <button class='btn btn-primary'>Message</button>
+                            </li>
+                            <li>
+                              Student's 4 name | Appointment time <br>
+                              <button class='btn btn-success'>Accept</button> <button class='btn btn-danger'>Cancel</button>
+                              <button class='btn btn-primary'>Message</button>
+                            </li>
+                          </ul>
+                        </p>
+                      </div>
+                    </div>
 
                     <!-- Time -->
                     <p class='card-text small text-muted'>
-                      <time datetime='2018-05-24'>". $schedule->start_time  .' to '. $schedule->end_time . "</time>
+                      <time datetime='2018-05-24' class='update'>". $schedule->start_time  .' to '. $schedule->end_time . "</time>
                     </p>
                     
                   </div>
                   <div class='col-auto'>
                     
                     <!-- Dropdown -->
-                    <div class='dropdown'>
-                      <a href='#!' class='dropdown-ellipses dropdown-toggle' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' data-boundary='window'>
-                        <i class='fe fe-more-vertical'></i>
-                      </a>
-                      <div class='dropdown-menu dropdown-menu-right'>
-                        <a href='#!' class='dropdown-item'>
-                          Action
-                        </a>
-                        <a href='#!' class='dropdown-item'>
-                          Another action
-                        </a>
-                        <a href='#!' class='dropdown-item'>
-                          Something else here
-                        </a>
-                      </div>
-                    </div>
+                    <i class='fe fe-trash-2' style='cursor: pointer;' data-toggle='tooltip' data-placement='top' title='Delete all Schedule'></i>
                     
                   </div>
                 </div> <!-- / .row -->
@@ -192,8 +212,10 @@
               
               
               
-              
-              
+              }else {
+
+                echo "No Schedule has been set yet";
+              }
               ?>
 
 
