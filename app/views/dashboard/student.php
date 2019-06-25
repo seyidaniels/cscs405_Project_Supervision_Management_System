@@ -222,7 +222,7 @@
                       </a>
                       <div class='dropdown-menu dropdown-menu-right'>
                         
-                        <a href='#!' class='dropdown-item' data-toggle='modal' data-appointment_id=".$appointment->id.    " data-target='#messageSupervisor' >
+                        <a href='#!' class='dropdown-item message_supervisor'  data-toggle='modal' data-appointment_id=".$appointment->id.    " data-target='#messageSupervisor' >
                           Message Supervisor
                         </a>
                         <a href='#!' class='dropdown-item'>
