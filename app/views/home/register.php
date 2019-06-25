@@ -99,7 +99,7 @@
             </div>   
 
             <p class="text-center mt-5">
-                Already have account? &nbsp; <a href="<?php echo root() . 'register'; ?>">Login</a>
+                Already have account? &nbsp; <a href="<?php echo root() . 'home/login'; ?>">Login</a>
             </p>
         </fieldset>
         

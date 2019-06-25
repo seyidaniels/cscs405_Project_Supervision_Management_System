@@ -4,7 +4,7 @@ class DashboardController extends Controller {
 
     public function __construct() {
         if (!Auth::user()) {
-            return redirect(root(). "login");
+            return redirect(root(). "home/login");
         }
     }
     public function index() {
@@ -15,6 +15,12 @@ class DashboardController extends Controller {
     public function profile() {
         $data['seyi'] = "seyidaniels";
         return $this->view('dashboard/profile');
+    }
+
+    public function logout () {
+        $_SESSION = array();
+        $_SESSION['message'] = "You are now logged out";        
+        return redirect(root(). "home/login");
     }
 
 

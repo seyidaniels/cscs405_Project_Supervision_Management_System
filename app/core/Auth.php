@@ -26,6 +26,12 @@ class Auth {
         }
     }
 
+
+
+    public static function usertype() {
+        return $_SESSION['auth_user_type'];
+    }
+
     protected function authenticatesUser($user_id, $type) {
         $_SESSION['logged_in'] = true;
         $_SESSION['user_id'] = $user_id;
