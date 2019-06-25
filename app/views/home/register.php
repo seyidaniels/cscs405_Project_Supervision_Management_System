@@ -28,6 +28,11 @@
     <section class="signup">
         <div class="container">
             <div class="signup-content">
+                <div class="signup-image">
+                    <figure>
+                        <img src="../images/standing-23@2x.png" alt="sing up image">
+                    </figure>
+                </div>
                 <div class="signup-form">
                     <h2 class="form-title">Sign up</h2>
 
@@ -120,14 +125,9 @@
                             </div> 
                         </div>
                         <p class="text-center">
-                            Already have account? &nbsp; <a href="<?php echo root() . '/home/login'; ?>">Login</a>
+                            Already have account? &nbsp; <a href="<?php echo root() . 'home/login'; ?>">Login</a>
                         </p>
                     </form>
-                </div>
-                <div class="signup-image">
-                    <figure>
-                        <img src="../images/standing-23@2x.png" alt="sing up image">
-                    </figure>
                 </div>
             </div>
         </div>

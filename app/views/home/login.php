@@ -76,7 +76,7 @@
                             </div> 
                         </div>
                         <p class="text-center mt-5">
-                            Don't have account? &nbsp; <a href="<?php echo root() . '/home/register'; ?>">Register</a>
+                            Don't have account? &nbsp; <a href="<?php echo root() . 'home/register'; ?>">Register</a>
                         </p>
                     </form>
                 </div>

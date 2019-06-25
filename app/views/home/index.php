@@ -62,7 +62,7 @@
                             <h1 class="brand-heading text-black">Simple application for the academic world</h1>
                             <p class="text-black text-desc mt-3">Are you a <span class="type"></span>? <br> ProjectConn is designed for you. Submission and Review of Projects made easy with ProjectConn. It's Free give it a trial today.</p>
                             <p class="btn-link mt-5">
-                                <a class="btn btn-small btn-mi" role="button" href="#">Get Started</a>
+                                <a class="btn btn-small btn-mi" role="button" href="<?php echo root() . 'home/register'; ?>">Get Started</a>
                             </p>
                         </div>
                     </div>
