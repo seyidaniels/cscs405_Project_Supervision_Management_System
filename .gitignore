@@ -1,3 +1,15 @@
-./vendor
+/node_modules
+/public/hot
+/storage/*.key
+/vendor
+/.idea
+/.vscode
+/.vagrant
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
 .env
-./app/database.php
+/database/migrations/test
+/config/mail.php
+/database

@@ -84,7 +84,7 @@
 
                   <!-- Title -->
                   <h4 class="card-header-title" id="exampleModalCenterTitle">
-                    Message?
+                    Message <?php echo Auth::user()->supervisor->fullName() ?> 
                   </h4>
               
                 </div>
@@ -105,7 +105,7 @@
             
 
                 <div class="form-group">
-                  <label for="exampleInputMessge">Enter Message</label>
+                  <label for="exampleInputMessge">Enter Message </label>
                   <textarea class="form-control" id="exampleInput" name="about" cols="10" rows="5" required></textarea>
                 </div>
 
@@ -151,7 +151,7 @@
               <div class="col-auto">
                 
                 <!-- Button -->
-                <button class="btn btn-primary" data-toggle="modal" data- data-target="#messageSupervisor">
+                <button class="btn btn-primary" data-toggle="modal" data-target="#modalBookAppointment">
                   Book Appointment
                 </button>
 
@@ -196,7 +196,7 @@
               <?php 
 
               foreach(Auth::user()->appointments as $appointment){
-                // dd($appointment->created_at);
+                
                 echo "              
 
                 <div class='row align-items-center'>
@@ -222,7 +222,7 @@
                       </a>
                       <div class='dropdown-menu dropdown-menu-right'>
                         
-                        <a href='#!' class='dropdown-item' data-toggle='modal' data-target='#messageSupervisor' >
+                        <a href='#!' class='dropdown-item' data-toggle='modal' data-appointment_id=".$appointment->id.    " data-target='#messageSupervisor' >
                           Message Supervisor
                         </a>
                         <a href='#!' class='dropdown-item'>
