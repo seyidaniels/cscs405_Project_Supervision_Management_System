@@ -34,12 +34,26 @@ class Validation {
         return $this->errors == null ? true: false;
     }
 
+    public function requires($data, array $fields) {
+        foreach($fields as $field) {
+            if (!array_key_exists($field, $data)) {
+                array_push($this->errors, $field . " is required");
+            }
+        }
+        return $this;
+    }
+
     public function redirect() {
         if ($this->errors) {
         $_SESSION['validation_errors'] = $this->errors;
             redirect(back());
             die();
         }
+    }
+
+    public function valid_time_range ($time1, $time2) {
+        if($time1 >= $time2) array_push($this->errors, 'The start time must be lesser than the end time');
+        return $this;
     }
 
 }
