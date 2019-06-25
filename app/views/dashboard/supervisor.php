@@ -67,6 +67,41 @@
       </div>
     </div>
 
+    <!-- Modal: Deleting Schedule -->
+    <div class="modal fade" id="modalDelete" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-card card" data-toggle="lists" data-lists-values='["name"]'>
+            <div class="card-header">
+              <div class="row align-items-center">
+                <div class="col">
+
+                  <!-- Title -->
+                  <h2 class="card-header-title text-center" id="exampleModalCenterTitle">
+                    Are you sure you want to delete these schedule. Clicking Ok deletes all the schedules.
+                  </h2>
+
+                </div>
+                <div class="col-auto">
+
+                  <!-- Close -->
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+
+                </div>
+              </div> <!-- / .row -->
+            </div>
+            <div class="card-header">
+
+              <button class="btn btn-success">Ok</button>  <button class="ml-5 btn btn-danger">Cancel</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- MAIN CONTENT
     ================================================== -->
     <div class="main-content">
@@ -86,7 +121,7 @@
                 </h3>
 
                 <!-- Title -->
-                <h1 class="header-title">
+                <h1 class="header-title" style="color: #95a5b4;">
                   welcome, <?php echo Auth::user()->fullname() ?>
                 </h1>
 
@@ -112,8 +147,8 @@
       <?php include('message.php'); ?>
 </div>
           </div>
-        <div class="row">
-          <div class="col-12 col-xl-6">
+        <!-- <div class="row"> -->
+          <div class="container">
 
 
             <!-- Projects -->
@@ -195,7 +230,7 @@
                   <div class='col-auto'>
                     
                     <!-- Dropdown -->
-                    <i class='fe fe-trash-2' style='cursor: pointer;' data-toggle='tooltip' data-placement='top' title='Delete all Schedule'></i>
+                    <i class='fe fe-trash-2' style='cursor: pointer;' data-toggle='modal' data-target='#modalDelete' data-toggle='tooltip' data-placement='top' title='Delete all Schedule'></i>
                     
                   </div>
                 </div> <!-- / .row -->
@@ -224,41 +259,8 @@
             </div> <!-- / .card -->           
 
           </div>
-          <div class="col-12 col-xl-6">
-            
-            <!-- Card -->
-            <div class="card">
-              <div class="card-body text-center">
-                <div class="row justify-content-center">
-                  <div class="col-12 col-xl-10">
-            
-                    <!-- Image -->
-                    <img src="<?php echo root() . 'images/illustrations/happiness.svg' ?>" alt="..." class="img-fluid mt--5 mb-4"
-                      style="max-width: 272px;">
-            
-                    <!-- Title -->
-                    <h2 class="mb-2">
-                      <?php  echo Auth::user() ?>
-                    </h2>
-            
-                    <!-- Content -->
-                    <p class="text-muted">
-                      This is a true story and totally not made up. This is going to be better in the long run but for now this is
-                      the way it is.
-                    </p>
-            
-                    <!-- Button -->
-                    <a href="#!" class="btn btn-primary">
-                      Try it for free
-                    </a>
-            
-                  </div>
-                </div> <!-- / .row -->
-              </div>
-            </div>
-
-          </div>
-        </div>
+          
+        <!-- </div> -->
       </div>
 
     </div> <!-- / .main-content -->

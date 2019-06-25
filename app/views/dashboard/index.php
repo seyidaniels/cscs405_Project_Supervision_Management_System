@@ -16,7 +16,7 @@
 
     
 
-    <title>Dashkit</title>
+    <title>Supervisor Dashboard</title>
   </head>
   <body>
 

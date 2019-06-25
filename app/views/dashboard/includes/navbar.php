@@ -66,6 +66,11 @@
                   <i class="fe fe-user"></i> Profile
                 </a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="profile-files.html">
+                  <i class="fe fe-mail"></i> Messages
+                </a>
+              </li>
               <li class="nav-item d-md-none">
                 <a class="nav-link" href="#sidebarModalActivity" data-toggle="modal">
                  <span class="fe fe-bell"></span> Notifications
@@ -95,7 +100,7 @@
                 <!-- Toggle -->
                 <a href="#!" id="sidebarIconCopy" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <div class="avatar avatar-sm avatar-online">
-                    <img src="<?php echo 'images/avatars/profiles/avatar-1.jpg' ?>" class="avatar-img rounded-circle" alt="...">
+                    <img src="<?php echo 'images/avatars/profiles/avatar-2.jpg' ?>" class="avatar-img rounded-circle" alt="...">
                   </div>
                 </a>
 
