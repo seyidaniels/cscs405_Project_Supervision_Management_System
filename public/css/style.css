@@ -506,11 +506,13 @@ a.info:hover {
 }
 
 .appointment__table {
-    list-style-type: disc;
+    margin: 0;
+    padding: 0;
 }
 
 .appointment__table li {
     padding-bottom: 10px;
+    list-style-type: disc;
 }
 
 /* .ftco-footer a {

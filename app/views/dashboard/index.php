@@ -12,6 +12,7 @@
     <!-- Theme CSS -->
       
     <link rel="stylesheet" href="<?php echo root() .'css/theme.min.css" id="stylesheetLight' ?>">
+    
 
     
 
@@ -772,7 +773,7 @@
                     
                     <!-- Title -->
                     <h4 class="card-header-title">
-                      Account Summary
+                      Appointment Summary
                     </h4>
 
                   </div>
@@ -791,14 +792,44 @@
 
                     <!-- Title -->
                     <h4 class="card-title mb-1">
-                      <a href="project-overview.html">Homepage Redesign</a>
+                      <i class="fe fe-plus" id="icons"></i>
+                      <!-- <i class="fe fe-minus"></i> -->
+                      <a class="collapsed" data-toggle="collapse" data-target="#collapseOne" style="cursor: pointer;">Homepage
+                        Redesign</a>
                     </h4>
-
+                    <div id="collapseOne" class="collapse" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <p>
+                          <ul class="appointment__table">
+                            <li>
+                              Student's 1 name | Appointment time <br>
+                              <button class="btn btn-success">Accept</button> <button class="btn btn-danger">Cancel</button>
+                              <button class="btn btn-primary">Message</button>
+                            </li>
+                            <li>
+                              Student's 2 name | Appointment time <br>
+                              <button class="btn btn-success">Accept</button> <button class="btn btn-danger">Cancel</button>
+                              <button class="btn btn-primary">Message</button>
+                            </li>
+                            <li>
+                              Student's 3 name | Appointment time <br>
+                              <button class="btn btn-success">Accept</button> <button class="btn btn-danger">Cancel</button>
+                              <button class="btn btn-primary">Message</button>
+                            </li>
+                            <li>
+                              Student's 4 name | Appointment time <br>
+                              <button class="btn btn-success">Accept</button> <button class="btn btn-danger">Cancel</button>
+                              <button class="btn btn-primary">Message</button>
+                            </li>
+                          </ul>
+                        </p>
+                      </div>
+                    </div>
                     <!-- Time -->
                     <p class="card-text small text-muted">
-                      <time datetime="2018-05-24">Updated 5hr ago</time>
+                      <time datetime="2018-05-24" class="update">Updated 5hr ago</time>
                     </p>
-                    
+
                   </div>
                   <div class="col-auto">
                     
@@ -831,14 +862,44 @@
 
                     <!-- Title -->
                     <h4 class="card-title mb-1">
-                      <a href="project-overview.html">Travels & Time</a>
+                      <i class="fe fe-plus" id="icons"></i>
+                      <!-- <i class="fe fe-minus"></i> -->
+                      <a class="collapsed" data-toggle="collapse" data-target="#collapseOne" style="cursor: pointer;">Homepage
+                        Redesign</a>
                     </h4>
-
+                    <div id="collapseOne" class="collapse" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <p>
+                          <ul class="appointment__table">
+                            <li>
+                              Student's 1 name | Appointment time <br>
+                              <button class="btn btn-success">Accept</button> <button class="btn btn-danger">Cancel</button>
+                              <button class="btn btn-primary">Message</button>
+                            </li>
+                            <li>
+                              Student's 2 name | Appointment time <br>
+                              <button class="btn btn-success">Accept</button> <button class="btn btn-danger">Cancel</button>
+                              <button class="btn btn-primary">Message</button>
+                            </li>
+                            <li>
+                              Student's 3 name | Appointment time <br>
+                              <button class="btn btn-success">Accept</button> <button class="btn btn-danger">Cancel</button>
+                              <button class="btn btn-primary">Message</button>
+                            </li>
+                            <li>
+                              Student's 4 name | Appointment time <br>
+                              <button class="btn btn-success">Accept</button> <button class="btn btn-danger">Cancel</button>
+                              <button class="btn btn-primary">Message</button>
+                            </li>
+                          </ul>
+                        </p>
+                      </div>
+                    </div>
                     <!-- Time -->
                     <p class="card-text small text-muted">
-                      <time datetime="2018-05-24">Updated 3hr ago</time>
+                      <time datetime="2018-05-24" class="update">Updated 5hr ago</time>
                     </p>
-                    
+
                   </div>
                   <div class="col-auto">
                     
@@ -871,14 +932,44 @@
 
                     <!-- Title -->
                     <h4 class="card-title mb-1">
-                      <a href="project-overview.html">Safari Exploration</a>
+                      <i class="fe fe-plus" id="icons"></i>
+                      <!-- <i class="fe fe-minus"></i> -->
+                      <a class="collapsed" data-toggle="collapse" data-target="#collapseOne" style="cursor: pointer;">Homepage
+                        Redesign</a>
                     </h4>
-
+                    <div id="collapseOne" class="collapse" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <p>
+                          <ul class="appointment__table">
+                            <li>
+                              Student's 1 name | Appointment time <br>
+                              <button class="btn btn-success">Accept</button> <button class="btn btn-danger">Cancel</button>
+                              <button class="btn btn-primary">Message</button>
+                            </li>
+                            <li>
+                              Student's 2 name | Appointment time <br>
+                              <button class="btn btn-success">Accept</button> <button class="btn btn-danger">Cancel</button>
+                              <button class="btn btn-primary">Message</button>
+                            </li>
+                            <li>
+                              Student's 3 name | Appointment time <br>
+                              <button class="btn btn-success">Accept</button> <button class="btn btn-danger">Cancel</button>
+                              <button class="btn btn-primary">Message</button>
+                            </li>
+                            <li>
+                              Student's 4 name | Appointment time <br>
+                              <button class="btn btn-success">Accept</button> <button class="btn btn-danger">Cancel</button>
+                              <button class="btn btn-primary">Message</button>
+                            </li>
+                          </ul>
+                        </p>
+                      </div>
+                    </div>
                     <!-- Time -->
                     <p class="card-text small text-muted">
-                      <time datetime="2018-05-24">Updated 10hr ago</time>
+                      <time datetime="2018-05-24" class="update">Updated 5hr ago</time>
                     </p>
-                    
+
                   </div>
                   <div class="col-auto">
                     
@@ -911,14 +1002,44 @@
 
                     <!-- Title -->
                     <h4 class="card-title mb-1">
-                      <a href="project-overview.html">Personal Site</a>
+                      <i class="fe fe-plus" id="icons"></i>
+                      <!-- <i class="fe fe-minus"></i> -->
+                      <a class="collapsed" data-toggle="collapse" data-target="#collapseOne" style="cursor: pointer;">Homepage
+                        Redesign</a>
                     </h4>
-
+                    <div id="collapseOne" class="collapse" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <p>
+                          <ul class="appointment__table">
+                            <li>
+                              Student's 1 name | Appointment time <br>
+                              <button class="btn btn-success">Accept</button> <button class="btn btn-danger">Cancel</button>
+                              <button class="btn btn-primary">Message</button>
+                            </li>
+                            <li>
+                              Student's 2 name | Appointment time <br>
+                              <button class="btn btn-success">Accept</button> <button class="btn btn-danger">Cancel</button>
+                              <button class="btn btn-primary">Message</button>
+                            </li>
+                            <li>
+                              Student's 3 name | Appointment time <br>
+                              <button class="btn btn-success">Accept</button> <button class="btn btn-danger">Cancel</button>
+                              <button class="btn btn-primary">Message</button>
+                            </li>
+                            <li>
+                              Student's 4 name | Appointment time <br>
+                              <button class="btn btn-success">Accept</button> <button class="btn btn-danger">Cancel</button>
+                              <button class="btn btn-primary">Message</button>
+                            </li>
+                          </ul>
+                        </p>
+                      </div>
+                    </div>
                     <!-- Time -->
                     <p class="card-text small text-muted">
-                      <time datetime="2018-05-24">Updated 4hr ago</time>
+                      <time datetime="2018-05-24" class="update">Updated 5hr ago</time>
                     </p>
-                    
+
                   </div>
                   <div class="col-auto">
                     
