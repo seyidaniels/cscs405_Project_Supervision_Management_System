@@ -14,9 +14,8 @@
     <link rel="stylesheet" href="<?php echo root() .'css/theme.min.css" id="stylesheetLight' ?>">
     
 
-    
 
-    <title>Supervisor Dashboard</title>
+    <title>Dashboard</title>
   </head>
   <body>
 

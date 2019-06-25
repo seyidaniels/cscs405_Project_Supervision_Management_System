@@ -1406,7 +1406,7 @@
                 
                 <!-- Avatar -->
                 <div class="avatar avatar-xxl header-avatar-top">
-                  <img src="<?php echo '../images/avatars/profiles/avatar-1.jpg' ?>" alt="..." class="avatar-img rounded-circle border-4 border-body">
+                  <img src="<?php echo '../images/avatars/profiles/avatar-1.jpg' ?>" alt="..." class="profile-pic avatar-img rounded-circle border-4 border-body">
                 </div>
 
               </div>
@@ -1426,9 +1426,10 @@
               <div class="col-12 col-md-auto mt-2 mt-md-0 mb-md-3">
                 
                 <!-- Button -->
-                <a href="#!" class="btn btn-primary d-block d-md-inline-block">
+                <a href="#!" class="upload-button btn btn-primary d-block d-md-inline-block" re>
                   Upload Profile Image
                 </a>
+                <input class="file-upload" type="file" accept="image/*"/>
 
               </div>
             </div> <!-- / .row -->
@@ -1465,6 +1466,33 @@
 
     <!-- Theme JS -->
     <script src="../assets/js/theme.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+
+    
+      var readURL = function(input) {
+          if (input.files && input.files[0]) {
+              var reader = new FileReader();
+
+              reader.onload = function (e) {
+                  $('.profile-pic').attr('src', e.target.result);
+              }
+      
+              reader.readAsDataURL(input.files[0]);
+          }
+      }
+      
+
+      $(".file-upload").on('change', function(){
+          readURL(this);
+      });
+      
+      $(".upload-button").on('click', function() {
+        $(".file-upload").click();
+      });
+  });
+    </script>
 
   </body>
 

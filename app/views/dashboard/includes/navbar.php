@@ -67,7 +67,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="<?php echo root() .'dashboard/message'?>">
+                <a class="nav-link" href="<?php echo root() .'dashboard/chat'?>">
                   <i class="fe fe-mail"></i> Messages
                 </a>
               </li>
