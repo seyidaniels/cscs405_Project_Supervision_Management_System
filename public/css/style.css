@@ -67,7 +67,15 @@ body {
     z-index: 3;
 }
 
-.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+.nav-item {
+    padding-right: 10px;
+}
+
+#mainNav {
+    padding: 20px;
+}
+
+.navbar-nav > .nav-item > .nav-link {
     font-size: 14px;
     padding-top: .9rem;
     padding-bottom: .9rem;
@@ -485,6 +493,15 @@ a.info:hover {
     text-decoration: none;
 }
 
+.social-icon {
+    position: absolute;
+    left: 30%;
+    top: 36%;
+    transform: translate(0%, -25%);
+    font-size: 25px!important;
+}
+
+
 /* .ftco-footer a {
     color: rgba(255, 255, 255, 0.7);
 } */
@@ -690,5 +707,11 @@ a.info:hover {
 @media (max-width: 992px) {
     .footer__section {
         padding-top: 80px;
+    }
+}
+
+@media (min-width: 991px) {
+    .column-2 {
+        padding-left: 84px;
     }
 }

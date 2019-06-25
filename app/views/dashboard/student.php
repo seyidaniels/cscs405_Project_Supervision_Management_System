@@ -73,7 +73,7 @@
 
 
 
-    <!-- Modal: Book Appointment -->
+    <!-- Modal: Message Supervisor -->
     <div class="modal fade" id="messageSupervisor" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -84,7 +84,7 @@
 
                   <!-- Title -->
                   <h4 class="card-header-title" id="exampleModalCenterTitle">
-                    Book an appointment
+                    Message?
                   </h4>
               
                 </div>
@@ -102,30 +102,10 @@
           
               <!-- Form -->
               <form action="<?php echo root(). 'student/bookAppointment'; ?>" method = "post">
-              <div class="form-group">
-                  <label for="exampleInputMessge">Appointment Title</label>
-                  <input type="text" class="form-control" name="name">
-                </div>
+            
 
                 <div class="form-group">
-                    <label for="schedule_id">Select Supervisor's Schedule</label>
-                  <select name="schedule_id" class="form-control" id="schedule_id">
-                    <?php 
-                        foreach(Auth::user()->supervisor->schedules as $schedule) {
-
-                            echo "<option value=
-                            ". $schedule->id . ">";
-                            echo $schedule->print()."
-                            </option>";
-                        }
-                    ?>
-                  </select>
-                </div>
-
-
-
-                <div class="form-group">
-                  <label for="exampleInputMessge">Enter a Reason for your appointment</label>
+                  <label for="exampleInputMessge">Enter Message</label>
                   <textarea class="form-control" id="exampleInput" name="about" cols="10" rows="5" required></textarea>
                 </div>
 
@@ -134,7 +114,7 @@
 
                 
 
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Send Message</button>
               </form>
 
             </div>
@@ -171,7 +151,7 @@
               <div class="col-auto">
                 
                 <!-- Button -->
-                <button class="btn btn-primary" data-toggle="modal" data-target="#messageSupervisor">
+                <button class="btn btn-primary" data-toggle="modal" data- data-target="#messageSupervisor">
                   Book Appointment
                 </button>
 

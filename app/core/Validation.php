@@ -47,6 +47,7 @@ class Validation {
         if ($this->errors) {
         $_SESSION['validation_errors'] = $this->errors;
             redirect(back());
+            die();
         }
     }
 

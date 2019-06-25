@@ -4,7 +4,7 @@ Authors: Members of Group 7 CSC405 Project
 
 body {
     font-size: 100%;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito', sans-serif!important;
 }
 
 .mx-15 {
@@ -34,13 +34,13 @@ body {
     margin-top: 3rem;
 }
 
-form {
+/* form {
     max-width: 300px;
     margin: 69px auto;
     padding: 10px 20px;
     background: #f4f7f8;
     border-radius: 8px;
-}
+} */
 
 h1 {
     margin: 0 0 30px 0;
@@ -126,12 +126,137 @@ fieldset {
     }
 }
 
-@media screen and (min-width: 480px) {
+/* @media screen and (min-width: 480px) {
 
     form {
       max-width: 480px;
     }
   
+} */
+
+
+/* @extend display-flex; */
+display-flex, .display-flex, .display-flex-center, .signup-content, .signin-content, .social-login, .socials {
+  display: flex;
+  display: -webkit-flex; }
+
+.main {
+  background: #f8f8f8;
+  padding: 150px 0; }
+
+.container {
+  width: 900px;
+  background: #fff;
+  margin: 0 auto;
+  box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+  -o-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+  -ms-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -o-border-radius: 20px;
+  -ms-border-radius: 20px; }
+
+
+.signup-content {
+  padding: 30px 0; }
+
+.signup-form, .signup-image, .signin-form, .signin-image {
+  width: 50%;
+  /* overflow: hidden;  */
 }
 
+.signup-image img {
+    width: 100%;
+}
+
+.form-title {
+  margin-bottom: 33px; }
+
+figure {
+  margin-bottom: 50px;
+  text-align: center; }
+
+#signin {
+  margin-top: 16px; }
+
+.signup-form {
+  margin-left: 75px;
+  margin-right: 75px;
+  padding-left: 34px; }
+
+.register-form {
+  width: 100%; }
+
+.signin-content {
+  padding-top: 67px;
+  padding-bottom: 87px; }
+
+.signin-form {
+  margin-right: 90px;
+  margin-left: 80px; }
+
+.signin-image {
+  margin-left: 110px;
+  margin-right: 20px;
+  margin-top: 10px; }
+
+@media screen and (max-width: 768px) {
+  .signup-content, .signin-content {
+    flex-direction: column;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -o-flex-direction: column;
+    -ms-flex-direction: column;
+    justify-content: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center; }
+
+  .signup-form {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    /* box-sizing: border-box; */
+    padding: 0 30px; }
+
+  .signin-image {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 50px;
+    order: 2;
+    -moz-order: 2;
+    -webkit-order: 2;
+    -o-order: 2;
+    -ms-order: 2; }
+
+  .signup-form, .signup-image, .signin-form, .signin-image {
+    width: auto; }
+
+  .social-login {
+    justify-content: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center; }
+
+  .form-button {
+    text-align: center; }
+
+  .signin-form {
+    order: 1;
+    -moz-order: 1;
+    -webkit-order: 1;
+    -o-order: 1;
+    -ms-order: 1;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0 30px; }
+
+  .form-title {
+    text-align: center; } }
+/*# sourceMappingURL=style.css.map */
 
