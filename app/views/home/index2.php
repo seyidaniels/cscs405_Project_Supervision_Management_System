@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -68,54 +68,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Modal: Deposit -->
-    <div class="modal fade" id="modalDeposit" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-card card" data-toggle="lists" data-lists-values='["name"]'>
-              <div class="card-header">
-                <div class="row align-items-center">
-                  <div class="col">
-  
-                    <!-- Title -->
-                    <h4 class="card-header-title" id="exampleModalCenterTitle">
-                      Deposit Cash
-                    </h4>
-                
-                  </div>
-                  <div class="col-auto">
-  
-                    <!-- Close -->
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                
-                  </div>
-                </div> <!-- / .row -->
-              </div>
-              <div class="card-header">
-            
-                <!-- Form -->
-                <form>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Enter Amount</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Amount">
-                  </div>
-  
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Enter Something</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Something">
-                  </div>
-  
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-  
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
     <!-- Modal: Search -->
     <div class="modal fade" id="sidebarModalSearch" tabindex="-1" role="dialog" aria-hidden="true">

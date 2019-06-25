@@ -501,6 +501,19 @@ a.info:hover {
     font-size: 25px!important;
 }
 
+.update {
+    padding-left: 1.3rem;
+}
+
+.appointment__table {
+    margin: 0;
+    padding: 0;
+}
+
+.appointment__table li {
+    padding-bottom: 10px;
+    list-style-type: disc;
+}
 
 /* .ftco-footer a {
     color: rgba(255, 255, 255, 0.7);

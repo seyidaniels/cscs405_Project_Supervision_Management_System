@@ -7,6 +7,13 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App' => $baseDir . '/app/core/App.php',
+<<<<<<< HEAD
+    'Auth' => $baseDir . '/app/core/Auth.php',
+    'Controller' => $baseDir . '/app/core/Controller.php',
+    'Student' => $baseDir . '/app/models/Student.php',
+    'Supervisor' => $baseDir . '/app/models/Supervisor.php',
+    'User' => $baseDir . '/app/models/User.php',
+=======
     'Appointment' => $baseDir . '/app/models/Appointment.php',
     'Auth' => $baseDir . '/app/core/Auth.php',
     'Carbon\\Carbon' => $vendorDir . '/nesbot/carbon/src/Carbon/Carbon.php',
@@ -42,5 +49,6 @@ return array(
     'Schedule' => $baseDir . '/app/models/Schedule.php',
     'Student' => $baseDir . '/app/models/Student.php',
     'Supervisor' => $baseDir . '/app/models/Supervisor.php',
+>>>>>>> c69c23010ecf3374558a2cff0d349e60029cde7c
     'Validation' => $baseDir . '/app/core/Validation.php',
 );
