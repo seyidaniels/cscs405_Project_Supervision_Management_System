@@ -47,6 +47,21 @@
 
     <!-- Theme JS -->
     <script src="<?php root().'assets/js/theme.min.js' ?>"></script>
+
+    <script>
+    $(document).on("click", "#messageSupervisor", function () {
+      console.log($(this).data);
+      return;
+     var  appointment_id = $(this).data('appointment_id');
+     console.log(appointment_id);
+     return;
+     $(".modal-body #bookId").val( myBookId );
+     // As pointed out in comments, 
+     // it is unnecessary to have to manually call the modal.
+     // $('#addBookDialog').modal('show');
+});
+
+    </script>
     
 
   </body>
