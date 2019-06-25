@@ -4,11 +4,7 @@
 
 namespace Composer\Autoload;
 
-<<<<<<< HEAD
-class ComposerStaticInitfaa5a3233705b70bffbe1ec62b1dcb4f
-=======
-class ComposerStaticInit56ed0538baff0b22e5c21e31e524a36c
->>>>>>> c69c23010ecf3374558a2cff0d349e60029cde7c
+class ComposerStaticInit4e0ec47e99b7e6cd0a02acc6577aaac5
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -93,13 +89,6 @@ class ComposerStaticInit56ed0538baff0b22e5c21e31e524a36c
 
     public static $classMap = array (
         'App' => __DIR__ . '/../..' . '/app/core/App.php',
-<<<<<<< HEAD
-        'Auth' => __DIR__ . '/../..' . '/app/core/Auth.php',
-        'Controller' => __DIR__ . '/../..' . '/app/core/Controller.php',
-        'Student' => __DIR__ . '/../..' . '/app/models/Student.php',
-        'Supervisor' => __DIR__ . '/../..' . '/app/models/Supervisor.php',
-        'User' => __DIR__ . '/../..' . '/app/models/User.php',
-=======
         'Appointment' => __DIR__ . '/../..' . '/app/models/Appointment.php',
         'Auth' => __DIR__ . '/../..' . '/app/core/Auth.php',
         'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',
@@ -135,22 +124,15 @@ class ComposerStaticInit56ed0538baff0b22e5c21e31e524a36c
         'Schedule' => __DIR__ . '/../..' . '/app/models/Schedule.php',
         'Student' => __DIR__ . '/../..' . '/app/models/Student.php',
         'Supervisor' => __DIR__ . '/../..' . '/app/models/Supervisor.php',
->>>>>>> c69c23010ecf3374558a2cff0d349e60029cde7c
         'Validation' => __DIR__ . '/../..' . '/app/core/Validation.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-<<<<<<< HEAD
-            $loader->prefixLengthsPsr4 = ComposerStaticInitfaa5a3233705b70bffbe1ec62b1dcb4f::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitfaa5a3233705b70bffbe1ec62b1dcb4f::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitfaa5a3233705b70bffbe1ec62b1dcb4f::$classMap;
-=======
-            $loader->prefixLengthsPsr4 = ComposerStaticInit56ed0538baff0b22e5c21e31e524a36c::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit56ed0538baff0b22e5c21e31e524a36c::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit56ed0538baff0b22e5c21e31e524a36c::$classMap;
->>>>>>> c69c23010ecf3374558a2cff0d349e60029cde7c
+            $loader->prefixLengthsPsr4 = ComposerStaticInit4e0ec47e99b7e6cd0a02acc6577aaac5::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit4e0ec47e99b7e6cd0a02acc6577aaac5::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit4e0ec47e99b7e6cd0a02acc6577aaac5::$classMap;
 
         }, null, ClassLoader::class);
     }
